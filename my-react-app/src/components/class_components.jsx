@@ -1,48 +1,56 @@
-import React from 'react';
+import React from "react";
 
-
-class Car_ClassComponent extends React.Component {
-    
+class Header extends React.Component{
     constructor(props){
         super(props);
-        this.state = {
-            color: "red",
-            brand: "Ford",
-            year: 1964,
-            model: props.model
-        };
+        this.state = { favoritecolor: "red"};
     }
 
-    changeColor = () => {
-        /**
-         * Always use the setState() method to 
-         * change the state object, it will 
-         * ensure that the component knows its 
-         * been updated and calls the render() 
-         * method (and all the other lifecycle methods).
-         */
-        this.setState({color: "blue"});
+    // called right before rendering the element(s) in the DOM.
+    // static getDerivedStateFromProps(props, state){
+    //     if(state.favoritecolor !== props.favcol){
+    //         return {favoritecolor: props.favcol};
+    //     }
+    //     return null;
+    // }
+
+    // kinoment ko yung nasa taas kase
+    // d gumagana yung componenDidMount
+
+
+    shouldComponentUpdate(){
+        return true;
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState){
+        document.getElementById("div1").innerHTML = 
+        "Before the update, the favorite color was " + 
+        prevState.favoritecolor;
+    }
+
+    componentDidUpdate(){
+        document.getElementById("div2").innerHTML = 
+        "The updated favorite color is " + 
+        this.state.favoritecolor;
     }
 
     render(){
-        // return <h2>Hi, I am a {this.state.color} Car!</h2>;
-
         return (
             <div>
-                <h1>My {this.state.brand}</h1>
-                <p>
-                    It is a {this.state.color} {this.state.model} from {this.state.year}                    
-                </p>
-                <button
-                    type="button"
-                    onClick={this.changeColor}
-                >
-                    Change color
-                </button>
+                <h1>My Favorite Color is {this.state.favoritecolor}</h1>
+                <div id="div1"></div>
+                <div id="div2"></div>
             </div>
         );
-    };
+    }
+
+
+    // called after the component is rendered.
+    componentDidMount(){
+        setTimeout(() => {
+            this.setState({favoritecolor: "yellow"})
+        }, 1000);
+    }
 }
 
-
-export default Car_ClassComponent;
+export default Header;
