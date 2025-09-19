@@ -17,8 +17,6 @@ const myElement = (
 
 const myElement1 = React.createElement('h1', {}, 'I do not use JSX!');
 
-
-
 function kwtohp(kw){
   return kw * 1.36;
 }
@@ -44,6 +42,25 @@ function Car(){
 }
 
 
+function Bike(){
+  const myFunc = () => {
+    alert('Hello World');
+  };
+
+  const myStyles = {
+    backgroundColor: "blue",
+    padding: "24px",
+    color: "white",
+    border: "none",
+  }
+
+  return (
+    <button style={myStyles} onClick={myFunc}>Click me</button>
+  );
+
+}
+
+
 createRoot(document.getElementById('root')).render(
-  <Car/>
+  <Bike />
 )
