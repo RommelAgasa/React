@@ -5,6 +5,9 @@ import Bike from './components/bike';
 import Umbrella from './components/props';
 import Garage from './components/garage';
 
+import Car_ClassComponent from './components/class_components';
+
+import Header from './components/header_constructor';
 
 // function handleUmbrellaClick(){
 //   alert("Umbrella closed!");
@@ -19,5 +22,12 @@ createRoot(document.getElementById('root')).render(
   //   features={["foldable", "windproof", "UV protection"]}
   //   onlClick={handleUmbrellaClick}
   // />
-  <Garage />
+
+
+  // <Garage />
+
+
+  // <Car_ClassComponent model="Mustang"/>
+
+  <Header favcol="red"/>
 )
