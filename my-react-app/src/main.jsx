@@ -1,66 +1,23 @@
 import { createRoot } from 'react-dom/client'
 import React from 'react';
-
-const myElement = (
-  <table>
-    <tr>
-      <th>Name</th>
-    </tr>
-    <tr>
-      <td>John</td>
-    </tr>
-    <tr>
-      <td>Elsa</td>
-    </tr>
-  </table>
-)
-
-const myElement1 = React.createElement('h1', {}, 'I do not use JSX!');
-
-function kwtohp(kw){
-  return kw * 1.36;
-}
+import Car from './components/car';
+import Bike from './components/bike';
+import Umbrella from './components/props';
+import Garage from './components/garage';
 
 
-function Car(){
-  
-  const myobj = {
-    name: "Fiat",
-    model: "500",
-    color: "white"
-  }
-  
-  return (
-    <>
-      {/* <h2>My Car</h2>
-      <p>It is a Ford Mustang</p>
-      <p>It has {kwtohp(218)} horsepower </p> */}
-
-      <h1>My car is a {myobj.color} {myobj.name} {myobj.model}.</h1>
-    </>
-  );
-}
-
-
-function Bike(){
-  const myFunc = () => {
-    alert('Hello World');
-  };
-
-  const myStyles = {
-    backgroundColor: "blue",
-    padding: "24px",
-    color: "white",
-    border: "none",
-  }
-
-  return (
-    <button style={myStyles} onClick={myFunc}>Click me</button>
-  );
-
-}
-
+// function handleUmbrellaClick(){
+//   alert("Umbrella closed!");
+// }
 
 createRoot(document.getElementById('root')).render(
-  <Bike />
+  // <Umbrella 
+  //   color="red"
+  //   size="large"
+  //   price={29.99}
+  //   isOpen={true}
+  //   features={["foldable", "windproof", "UV protection"]}
+  //   onlClick={handleUmbrellaClick}
+  // />
+  <Garage />
 )
