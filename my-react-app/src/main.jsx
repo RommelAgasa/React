@@ -9,20 +9,21 @@ import Car_ClassComponent from './components/components';
 
 import Header from './components/class_components';
 
-function handleUmbrellaClick(){
-  alert("Umbrella closed!");
-}
+import Car_Props_Destructuring from './components/destructuring_props';
+
+// function handleUmbrellaClick(){
+//   alert("Umbrella closed!");
+// }
 
 createRoot(document.getElementById('root')).render(
-  <Umbrella 
-    color="red"
-    size="large"
-    price={29.99}
-    isOpen={true}
-    features={["foldable", "windproof", "UV protection"]}
-    onlClick={handleUmbrellaClick}
-  />
-
+  // <Umbrella 
+  //   color="red"
+  //   size="large"
+  //   price={29.99}
+  //   isOpen={true}
+  //   features={["foldable", "windproof", "UV protection"]}
+  //   onlClick={handleUmbrellaClick}
+  // />
 
   // <Garage />
 
@@ -30,4 +31,6 @@ createRoot(document.getElementById('root')).render(
   // <Car_ClassComponent model="Mustang"/>
 
   // <Header favcol="red"/>
+
+  <Car_Props_Destructuring brand="Ford" model="Mustang" year="1969"/>
 )
