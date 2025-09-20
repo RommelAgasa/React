@@ -1,17 +1,19 @@
+
+// Day 1
 import { createRoot } from 'react-dom/client'
 import React from 'react';
 import Car from './components/car';
 import Bike from './components/bike';
 import Umbrella from './components/props';
 import Garage from './components/garage';
-
 import Car_ClassComponent from './components/components';
-
 import Header from './components/class_components';
 
-import Car_Props_Destructuring from './components/destructuring_props';
 
+// Day 2
+import Car_Props_Destructuring from './components/destructuring_props';
 import Parent from './components/props_children';
+import Football from './components/react_events';
 
 
 // function handleUmbrellaClick(){
@@ -36,7 +38,7 @@ createRoot(document.getElementById('root')).render(
   // <Header favcol="red"/>
 
   // <Car_Props_Destructuring brand="Ford" model="Mustang" year="1969"/>
-
-  <Parent />
+  //<Parent />
+  <Football/>
 
 )

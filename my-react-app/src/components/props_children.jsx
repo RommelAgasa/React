@@ -8,7 +8,7 @@ function Son(props){
 }
 
 function Daughter(props){
-    const {brand, model} = props;
+    //const {brand, model} = props;
     return (
         <div style={{background: "lightgblue"}}>
             <h2>Daughter</h2>
