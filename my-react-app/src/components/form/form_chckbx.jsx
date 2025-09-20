@@ -8,7 +8,7 @@ function MyFormWithCheckbox(){
         const target = e.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
         const name = target.name;
-        setInputs(values => ({... values, [name]:value}))
+        setInputs(values => ({...values, [name]:value}))
     }
 
     const handleSubmit = (event) => {

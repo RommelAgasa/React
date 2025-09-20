@@ -13,11 +13,12 @@ import Header from './components/class_components';
 // Day 2
 import Car_Props_Destructuring from './components/destructuring_props';
 import Parent from './components/props_children';
-import Football from './components/react_events';
+import Football from './components/form/react_events';
 import Goal from './components/conditional_rendering';
 import MyCars from './components/list';
-import MyForm from './components/react_form';
-import MyFormWithCheckbox from './components/form_chckbx';
+import MyForm from './components/form/react_form';
+import MyFormWithCheckbox from './components/form/form_chckbx';
+import MyFormWithRadio from './components/form/radio';
 
 // function handleUmbrellaClick(){
 //   alert("Umbrella closed!");
@@ -43,6 +44,7 @@ createRoot(document.getElementById('root')).render(
   // <Goal isGoal={true} brand="Mustang"/>
   // <MyCars/>
   // <MyForm/>
-  <MyFormWithCheckbox />
+  // <MyFormWithCheckbox />
+  <MyFormWithRadio />
 
 )
