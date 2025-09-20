@@ -19,6 +19,7 @@ import MyCars from './components/list';
 import MyForm from './components/form/react_form';
 import MyFormWithCheckbox from './components/form/form_chckbx';
 import MyFormWithRadio from './components/form/radio';
+import MyApp from './components/modal_portal';
 
 // function handleUmbrellaClick(){
 //   alert("Umbrella closed!");
@@ -45,6 +46,7 @@ createRoot(document.getElementById('root')).render(
   // <MyCars/>
   // <MyForm/>
   // <MyFormWithCheckbox />
-  <MyFormWithRadio />
+  // <MyFormWithRadio />
 
+  <MyApp />
 )
