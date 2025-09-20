@@ -11,6 +11,9 @@ import Header from './components/class_components';
 
 import Car_Props_Destructuring from './components/destructuring_props';
 
+import Parent from './components/props_children';
+
+
 // function handleUmbrellaClick(){
 //   alert("Umbrella closed!");
 // }
@@ -32,5 +35,8 @@ createRoot(document.getElementById('root')).render(
 
   // <Header favcol="red"/>
 
-  <Car_Props_Destructuring brand="Ford" model="Mustang" year="1969"/>
+  // <Car_Props_Destructuring brand="Ford" model="Mustang" year="1969"/>
+
+  <Parent />
+
 )
