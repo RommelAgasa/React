@@ -16,6 +16,8 @@ import Parent from './components/props_children';
 import Football from './components/react_events';
 import Goal from './components/conditional_rendering';
 import MyCars from './components/list';
+import MyForm from './components/react_form';
+import MyFormWithCheckbox from './components/form_chckbx';
 
 // function handleUmbrellaClick(){
 //   alert("Umbrella closed!");
@@ -32,15 +34,15 @@ createRoot(document.getElementById('root')).render(
   // />
 
   // <Garage />
-
-
   // <Car_ClassComponent model="Mustang"/>
-
   // <Header favcol="red"/>
 
   // <Car_Props_Destructuring brand="Ford" model="Mustang" year="1969"/>
-  //<Parent />
+  // <Parent />
   // <Football/>
   // <Goal isGoal={true} brand="Mustang"/>
-  <MyCars/>
+  // <MyCars/>
+  // <MyForm/>
+  <MyFormWithCheckbox />
+
 )
