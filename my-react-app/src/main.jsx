@@ -14,6 +14,7 @@ import Header from './components/class_components';
 import Car_Props_Destructuring from './components/destructuring_props';
 import Parent from './components/props_children';
 import Football from './components/react_events';
+import Goal from './components/conditional_rendering';
 
 
 // function handleUmbrellaClick(){
@@ -39,6 +40,6 @@ createRoot(document.getElementById('root')).render(
 
   // <Car_Props_Destructuring brand="Ford" model="Mustang" year="1969"/>
   //<Parent />
-  <Football/>
-
+  // <Football/>
+  <Goal isGoal={true} brand="Mustang"/>
 )
