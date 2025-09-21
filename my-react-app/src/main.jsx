@@ -21,6 +21,12 @@ import MyFormWithCheckbox from './components/form/form_chckbx';
 import MyFormWithRadio from './components/form/radio';
 import MyApp from './components/modal_portal';
 
+
+
+
+// Day 3
+import LazyLoading from './components/react_suspense';
+
 // function handleUmbrellaClick(){
 //   alert("Umbrella closed!");
 // }
@@ -47,6 +53,8 @@ createRoot(document.getElementById('root')).render(
   // <MyForm/>
   // <MyFormWithCheckbox />
   // <MyFormWithRadio />
+  // <MyApp />
 
-  <MyApp />
+
+  <LazyLoading/>
 )
