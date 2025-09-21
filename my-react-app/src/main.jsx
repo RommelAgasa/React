@@ -22,8 +22,6 @@ import MyFormWithRadio from './components/form/radio';
 import MyApp from './components/modal_portal';
 
 
-
-
 // Day 3
 import LazyLoading from './components/react_suspense';
 import AppCss from './components/css/myapp';
@@ -34,6 +32,7 @@ import AppUseTransition from './components/react_transitions';
 import AppForwardRef from './components/react_forwardRef';
 import AppHOC from './components/react_hoc';
 import TimerUseEffect from './components/hooks/useEffect';
+import Component1 from './components/hooks/useContext';
 
 // function handleUmbrellaClick(){
 //   alert("Umbrella closed!");
@@ -72,5 +71,6 @@ createRoot(document.getElementById('root')).render(
   // <AppUseTransition />
   // <AppForwardRef />
   // <AppHOC />
-  <TimerUseEffect />
+  // <TimerUseEffect />
+  <Component1 /> // useContext
 )
