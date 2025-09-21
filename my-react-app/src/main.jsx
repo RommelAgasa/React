@@ -26,6 +26,7 @@ import MyApp from './components/modal_portal';
 
 // Day 3
 import LazyLoading from './components/react_suspense';
+import AppCss from './components/css/myapp';
 
 // function handleUmbrellaClick(){
 //   alert("Umbrella closed!");
@@ -56,5 +57,6 @@ createRoot(document.getElementById('root')).render(
   // <MyApp />
 
 
-  <LazyLoading/>
+  // <LazyLoading/>
+  <AppCss/>
 )
