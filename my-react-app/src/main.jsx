@@ -31,6 +31,9 @@ import AppRouter from './components/router/react_router';
 import AppNestedRoute from './components/router/nested_route';
 import AppUseParams from './components/router/router_parameters';
 import AppUseTransition from './components/react_transitions';
+import AppForwardRef from './components/react_forwardRef';
+import AppHOC from './components/react_hoc';
+
 
 // function handleUmbrellaClick(){
 //   alert("Umbrella closed!");
@@ -66,5 +69,7 @@ createRoot(document.getElementById('root')).render(
   // <AppRouter/>
   // <AppNestedRoute />
   // <AppUseParams />
-  <AppUseTransition />
+  // <AppUseTransition />
+  // <AppForwardRef />
+  <AppHOC />
 )
