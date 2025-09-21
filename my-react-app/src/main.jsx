@@ -34,6 +34,7 @@ import AppHOC from './components/react_hoc';
 import TimerUseEffect from './components/hooks/useEffect';
 import Component1 from './components/hooks/useContext';
 import UseRefExample from './components/hooks/useRef';
+import Score_useReducer from './components/hooks/useReducer';
 
 // function handleUmbrellaClick(){
 //   alert("Umbrella closed!");
@@ -74,5 +75,6 @@ createRoot(document.getElementById('root')).render(
   // <AppHOC />
   // <TimerUseEffect />
   // <Component1 /> // useContext
-  <UseRefExample />
+  // <UseRefExample />
+  <Score_useReducer />
 )
