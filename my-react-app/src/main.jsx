@@ -33,6 +33,7 @@ import AppForwardRef from './components/react_forwardRef';
 import AppHOC from './components/react_hoc';
 import TimerUseEffect from './components/hooks/useEffect';
 import Component1 from './components/hooks/useContext';
+import UseRefExample from './components/hooks/useRef';
 
 // function handleUmbrellaClick(){
 //   alert("Umbrella closed!");
@@ -72,5 +73,6 @@ createRoot(document.getElementById('root')).render(
   // <AppForwardRef />
   // <AppHOC />
   // <TimerUseEffect />
-  <Component1 /> // useContext
+  // <Component1 /> // useContext
+  <UseRefExample />
 )
